@@ -18,7 +18,7 @@ module.exports = (phase) => {
   console.log(phase, '----', PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_SERVER, PHASE_PRODUCTION_BUILD)
   let config = {
     reactStrictMode: true,
-    swcMinify: false // 不适用swc打包()
+    swcMinify: true // 不适用swc打包()
   }
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     // 开发环境
